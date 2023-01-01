@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta content="Omar" name="viewport">
+        <title>Log In page</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" 
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" 
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <h1>LOINC Medical Standard</h1>
+    <div class="container">
+        <a href="main.html" target="_self"><div class="card">
+         <div class="card_top"><i class="fas fa-home"></i>
+            <p>Main Page</p></div>
+        </div></a>
+        <div class="card">
+        <div class="card_bottom">
+            <form action="/action_page.php">
+                <label for="email2">Email</label><br>
+                 <input type="email" id="email2" name="card2" placeholder="example@email.com" autocomplete="on" required pattern=".*com"><br>
+                 <label for="password2" >Password</label><br>
+                 <input type="password" id="password2" name="card2" placeholder="************" autocomplete="on"><br>
+                 <input type="submit" value="Validate">
+                 <a href="Hospital.html" target="_self"><input type="button" value="Login"></a>
+               </form>
+            </div>
+            <div class="card_top"><i class="fa fa-hospital" aria-hidden="true"></i>
+                <p>Hospital</p></div>
+        </div>
+        <div class="card">
+           <div class="card_bottom">
+            <form action="/action_page.php">
+                <label for="email3">Email</label><br>
+                 <input type="email" id="email3" name="card3" placeholder="example@email.com" autocomplete="on" required pattern=".*com"><br>
+                 <label for="password3">Password</label><br>
+                 <input type="password" id="password3" name="card3" placeholder="************" autocomplete="on"><br>
+                 <input type="submit" value="Validate">
+                 <a href="admin.html" target="_self"><input type="button" value="Login"></a>
+               </form>
+             </div>
+             <div class="card_top"><i class="fas fa-user-circle" aria-hidden="true"></i>
+                <p>Admin</p></div>
+           </div>
+    </div>
+    </body>
+</html>

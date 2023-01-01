@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta content="Omar" name="viewport">
+        <title>Sign up page</title>
+        <link rel="stylesheet" href="signup.css" />
+    </head>
+    <body>
+        <div class="container">
+            <div class="title">Registration</div>
+            <form action="/action_page.php">
+                <div class="userinfo">
+                    <div class="input">
+                        <span class="details">Full Name</span>
+                        <input type="text" placeholder="Enter your name" autocomplete="on" required>
+                    </div>
+                    <div class="input">
+                        <span class="details">Username</span>
+                        <input type="text" placeholder="Enter your username" autocomplete="on" required>
+                    </div>
+                    <div class="input">
+                        <span class="details">Email</span>
+                        <input type="email" placeholder="example@email.com" autocomplete="on" pattern=".*com" required>
+                    </div>
+                     <div class="input">
+                        <span class="details">Phone number</span>
+                        <input type="tel" id="phonenumber" name="phonenumber" placeholder="123-45-678" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" autocomplete="on" required>
+                    </div>
+                    <div class="input">
+                        <span class="details">Password</span>
+                        <input type="password" placeholder="************" autocomplete="on" required>
+                    </div>
+                    <div class="input">
+                        <span class="details">Confirm Password</span>
+                        <input type="password" placeholder="************" autocomplete="on" required>
+                    </div>
+                </div> 
+                    <div class="genderdet">
+                        <span class="gendertit">Gender</span>
+                        <div class="category">
+                            <label for="d1">
+                                <input type="radio" name="gender" value="male" id="d1" required>
+                                <span class="gender">Male</span>
+                            </label>
+                            <label for="d2">
+                                <input type="radio" name="gender" value="female" id="d2" required>
+                                <span class="gender">Female</span>
+                            </label>
+                            <label for="d3">
+                                <input type="radio" name="gender" value="notsay"id="d3" required>
+                                <span class="gender">Prefer not to say</span>
+                            </label>
+                        </div>
+                    </div>
+                    <input type="submit" value="Validate" id="vali">
+                    <div class="button">
+                        <a href="HTML,CSS_ASSIGNMENT.html" target="_self"><input type="button" value="Register"></a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>

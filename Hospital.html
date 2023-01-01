@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta content="Mostafa Khaled" name="viewport">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" 
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+    <title>Hospital</title>
+    <link rel="stylesheet" href="Hospital.css">
+</head>
+<body>
+    <header class="header">
+        <img src="loinc-avatar.png" id="logo" alt="loinc-logo">
+        <nav class="navbar">
+            <a href="main.html" target="_self">Home</a>
+            <a href="https://loinc.org/" target="_self">About</a>
+            <a href="https://loinc.org/services/" target="_self">Services</a>
+            <a href="https://loinc.org/contact/" target="_self">Contact</a>
+        </nav>
+        <div class="icons">
+                <div id="menubar" class="fas fa-bars"></div>
+                <a href="HTML,CSS_ASSIGNMENT.html" target="_self">Logout</a>
+        </div>
+    </header>
+<section>
+    <div class="content">
+        <div class="form_title">Patient Data</div>
+            <form action="">
+            <div class="Patient_inputs">    
+                <div class="data">
+                    <span class="tag">Patient First Name</span>
+                    <input type="text"  autocomplete="on" required placeholder="Enter Patient First Name" autocomplete="on">
+                </div>
+                <div class="data">
+                    <span class="tag">Patient Last Name</span>
+                    <input type="text"  autocomplete="on" required placeholder="Enter Patient Last Name" autocomplete="on">
+                </div>
+                <div class="data">
+                    <span class="tag">Patient ID</span>
+                    <input type="text"  autocomplete="on" required placeholder="Enter Patient ID" autocomplete="on">
+                </div>
+                <div class="data">
+                    <span class="tag">Patient SSN</span>
+                    <input type="text"  autocomplete="on" required placeholder="Enter Patient SSN" autocomplete="on">
+                </div>
+            </div>
+            <div class="line">
+            <br>
+            </div>
+            <div class="validation">
+                <input type="submit" value="Validate">
+                <a href="patient_test.html" target="_self"><input type="button" value="Next" id="next"></a>
+                <input type="reset" value="reset">
+            </div>    
+            </form>
+        </div>
+    </div>
+</section>
+</body>
+</html>

@@ -1,0 +1,256 @@
+*{
+    box-sizing: border-box;
+}
+:root{
+    --mainclr:#239f85;
+    --secclr:#ff5d22;
+}
+html, body{
+    overflow-x: hidden;
+    height: 100%;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background: #fff;
+    padding: 0;
+    margin: 0;
+    background: url(hospital.jpg) no-repeat center;
+    background-size:cover;
+    background-repeat: no-repeat; 
+}
+input[type=button]{
+    background: transparent;
+    border: transparent;
+    font-size: 1rem;
+    font-weight: bold;
+    color:white;
+}
+h1{
+    text-align: start;
+    text-align: center;
+}
+.header{
+    background: var(--mainclr);
+    padding:1.5rem 7%;
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+    text-align: center;
+}
+.header a{
+    color:white;
+    font-size: 1rem;
+    margin-left: 2rem;
+    position: relative;
+}
+.header a::after{
+    content: '';
+    background: var(--secclr);
+    height:3px;
+    width: 0;
+    position: absolute;
+    top:100%;
+    left:0;
+    margin-top: 5px;
+    transition: 0.4s;
+}
+.header a:hover:after{
+    content: '';
+    background: var(--secclr);
+    width:100%;
+    height:3px;
+    position: absolute;
+    top:100%;
+    left:0;
+    margin-top: 5px;
+}
+.main{
+    height: 100%;
+    margin-top: 60px;
+    padding: 10px 50px;
+}
+#sidbarmenu{
+    height:100%;
+    position: fixed;
+    left:0;
+    top:0;
+    width:250px;
+    margin-top: 60px;
+    background: #2e86de;
+    transform: translateX(-250px);
+    transition: 0.5s ease-in-out;
+}
+#opensidebafrmenu:checked ~ #sidbarmenu{
+    transform: translateX(0px);
+}
+#info:hover {
+    background: rgba(94, 227, 196, 0.7);
+    margin-top: 1.3rem;
+    transition: 0.5s;
+}
+#sidbarmenu:hover {
+    background-color: #ff5d22;
+    transition: 0.5s;
+}
+.menu{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.menu li{
+    color:#fff;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.10);
+}
+.menu li a{
+    color:#fff;
+    display: block;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 20px;
+}
+.sidebaricon{
+    width:22px;
+    height:22px;
+    position: fixed;
+    z-index: 20;
+    top:22px;
+    left:15px;
+    cursor: pointer;
+
+}
+.spinner{
+    height:3px;
+    background: white;
+    transition: all 0.3s;
+}
+.spinner.middle,
+.spinner.bottom{
+    margin-top: 3px;
+}
+#opensidebafrmenu{
+    opacity: 0;
+}
+#opensidebafrmenu:checked ~ .sidebaricon > .spinner.middle{
+    opacity: 0;
+}
+#opensidebafrmenu:checked ~ .sidebaricon > .spinner.top{
+    transform: rotate(135deg);
+    margin-top: 8px;
+}
+#opensidebafrmenu:checked ~ .sidebaricon > .spinner.bottom{
+    transform: rotate(-135deg);
+    margin-top: -9px;
+}
+#info{
+    padding:1.875rem; 
+    position: absolute;
+    top:1.5em;
+    width:100%;
+    left:0;
+}
+h2{
+    text-align: center;
+}
+p{
+    font-size: 1.3rem;
+}
+@media screen and (max-width: 650px) {
+
+    .header {
+        background: var(--mainclr);
+        padding: 1.2rem 7%;
+        position: fixed;
+        width: 100%;
+        z-index: 10;
+        text-align: center;
+    }
+
+    .header a {
+        color: white;
+        font-size: 0.75rem;
+        margin-left: 0.75rem;
+        position: relative;
+    }
+
+    #sidbarmenu {
+        height: 100%;
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 150px;
+        margin-top: 60px;
+        background: #2e86de;
+        transform: translateX(-250px);
+        transition: 0.5s ease-in-out;
+    }
+
+    .menu {
+        font-size: small;
+    }
+
+    p {
+        font-size: small;
+    }
+
+    h1 {
+        font-size: medium;
+    }
+    h2{
+        font-size: medium;
+    }
+
+    input[type=button] {
+        font-size: 0.75rem;
+    }
+
+}
+
+@media screen and (max-width: 420px) {
+
+    .header {
+        background: var(--mainclr);
+        padding: 1.2rem 7%;
+        position: fixed;
+        width: 100%;
+        z-index: 10;
+        text-align: center;
+    }
+
+    .header a {
+        color: white;
+        font-size: 0.5rem;
+        margin-left: 0.5rem;
+        position: relative;
+    }
+
+    .menu {
+        font-size: x-small;
+    }
+
+    #sidbarmenu {
+        height: 100%;
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100px;
+        margin-top: 60px;
+        background: #2e86de;
+        transform: translateX(-250px);
+        transition: 0.5s ease-in-out;
+    }
+
+    p {
+        font-size: small;
+    }
+
+    h1 {
+        font-size: medium;
+    }
+    h2{
+        font-size: medium;
+    }
+
+    input[type=button] {
+        font-size: 0.5rem;
+    }
+}
