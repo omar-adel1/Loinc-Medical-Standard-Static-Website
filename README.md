@@ -3,7 +3,6 @@ Welcome to my project on GitHub! This is a static website built using HTML and C
 ## Table of Contents
 
 - [Built with](#Built-with)
-- [Deployment](#Deployment)
 - [Design](#Design)
 - [Features](#Features)
 - [Authors](#Authors)
