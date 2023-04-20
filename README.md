@@ -12,4 +12,4 @@ Welcome to my project on GitHub! This is a static website built using HTML and C
 ## Built with
 
 ![markup language](https://img.shields.io/badge/markup%20language-HTML-red)
-![style sheet language](https://img.shields.io/badge/style sheet-CSS-blue)
+![style sheet language](https://img.shields.io/badge/style sheet%20language-CSS-blue)
