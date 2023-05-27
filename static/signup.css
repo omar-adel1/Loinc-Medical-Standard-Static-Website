@@ -1,0 +1,127 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: "Alliance No.1","Segoe UI",Helvetica,Arial;
+}
+body{
+    display:flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background:linear-gradient(135deg,#0082e6,#00093c);
+}
+.container{
+    max-width: 43.75rem;
+    width:100%;
+    background: white;
+    padding:1.5625rem 2rem;
+    border-radius: 0.3125rem;
+    box-shadow:  0rem 0.7rem 1rem white, 0.2rem 0.2rem 0.1rem white;
+}
+.container .title{
+    font-size: 1.5rem;
+    font-weight: bold;
+    position: relative;
+}
+.container .title::before{
+    content:'';
+    position: absolute;
+    left:0;
+    bottom:0;
+    height: 0.2rem;
+    width:1.7rem;
+    background:linear-gradient(135deg,#0082e6,#00093c);
+}
+.container form .userinfo{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 1.25rem 0 0.75rem 0;
+}
+form .userinfo .input{
+    margin-bottom: 1rem;
+    width:calc(100% / 2 - 1.25rem);
+}
+.userinfo .input .details{
+    display: block;
+    font-weight: 500;
+    margin-bottom:0.3rem ;
+}
+.userinfo .input input{
+    height:2.8rem;
+    width:100%; 
+    outline: none;
+    border-radius: 0.3rem;
+    border:0.0625rem solid black;
+    padding-left: 1rem;
+    font-size: 1rem;
+    border-bottom-width: 0.125rem;
+    transition: all 0.5s ease;
+}
+.userinfo .input input:focus,
+.userinfo .input input:valid{
+    border-color:black;
+}
+form .genderdet .gendertit{
+    font-size:1.25rem;
+    font-weight: 500;
+}
+form .genderdet .category{
+    display: flex;
+    width:80%;
+    margin:1rem 0;
+    justify-content: space-between;
+}
+.genderdet .category label{
+    display:flex;
+    align-items:center ;
+}
+form .button{
+    height:2.8rem;
+    margin:2.8rem 0;
+}
+#vali{
+    height:100%;
+    outline:none;
+    color:white;
+    background:linear-gradient(135deg,#00093c,#0082e6);
+    font-size: 1em;
+    font-weight: 500;
+    width: 25%;
+    border:none;
+    border-radius: 0.3rem;
+}
+form .button input{
+    height:100%;
+    width:100%;
+    outline:none ;
+    color:white;
+    border:none ;
+    font-size: 1rem;
+    font-weight: 500;
+    border-radius:0.3rem ;
+    letter-spacing:0.0625rem ;
+    background:linear-gradient(135deg,#0082e6,#00093c);
+}
+form .button input:hover{
+    background:linear-gradient(-135deg,#0082e6,#00093c); 
+}
+@media screen and (max-width:36.5rem){
+    .container{
+        max-width:100% ;
+    }
+    form .userinfo .input{
+        width:100%;
+    }
+    form .genderdet .category{
+        width:100%;
+    }
+    .container form .userinfo{
+        max-height: 18.5rem;
+        overflow-y: scroll;
+    }
+    .userinfo::-webkit-scrollbar{
+        width:0;
+    }
+}
