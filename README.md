@@ -4,6 +4,7 @@ Welcome to my project on GitHub! This is a static website built using HTML and C
 
 - [Built with](#Built-with)
 - [Design](#Design)
+- [Acknowledgements](#Acknowledgements)
 
 
 ## Built with
@@ -17,3 +18,10 @@ Welcome to my project on GitHub! This is a static website built using HTML and C
 ![main widow](./images/Loinc_2.png)
 ![main widow](./images/Loinc_3.png)
 ![main widow](./images/Loinc_4.png)
+
+
+## Acknowledgements
+
+Submitted to: Dr. Ahmed Hisham & Eng. Sohaila Mohammed
+
+All rights reserved © 2022 to Team 10 - HealthCare Engineering and Management, Cairo University (Class 2025)
