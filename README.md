@@ -6,11 +6,17 @@ Welcome to my project on GitHub! This is a static website built using HTML and C
 - [Design](#Design)
 - [Acknowledgements](#Acknowledgements)
 
-
 ## Built with
-
-![markup language](https://img.shields.io/badge/markup%20language-HTML-red)
-![style sheet language](https://img.shields.io/badge/style_sheet%20language-CSS-blue)
+<table>
+  <tr>
+    <td>
+      <img src="https://img.shields.io/badge/markup%20language-HTML-orange" alt="markup language">
+    </td>
+    <td>
+      <img src="https://img.shields.io/badge/style%20sheet%20language-CSS-blue" alt="style sheet language">
+    </td>
+  </tr>
+</table>
 
 ## Design
 ![main widow](./images/Loinc_0.png)
